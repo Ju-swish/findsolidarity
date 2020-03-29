@@ -31,8 +31,8 @@ media/*
 
 # Logs and Databases #
 ######################
-#*.log
-*.sql
+*.log
+#*.sql
 
 # OS generated files #
 ######################
