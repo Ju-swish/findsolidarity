@@ -66,12 +66,12 @@
             //Server settings
             $mail->SMTPDebug = SMTP::DEBUG_OFF;                     //SMTP::DEBUG_CONNECTION  to test connection                // Enable verbose debug output
             $mail->isSMTP();                                        // Send using SMTP
-            $mail->Host       = 'relay-hosting.secureserver.net';   // Set the SMTP server to send through
-            $mail->SMTPAuth   = false;                              // Enable SMTP authentication
-            $mail->Username   = 'findsolidarity@gmail.com';         // SMTP username
-            $mail->Password   = 'ec0s0cialprojekt';                 // SMTP password
-            $mail->SMTPSecure = false;                              // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-            $mail->Port       = 25;                                 // TCP port to connect to
+            $mail->Host       = '';   // Set the SMTP server to send through
+            $mail->SMTPAuth   = true;                              // Enable SMTP authentication
+            $mail->Username   = '';         // SMTP username
+            $mail->Password   = '';                 // SMTP password
+            $mail->SMTPSecure = true;                              // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+            $mail->Port       = PORT;                                 // TCP port to connect to
 
             //Recipients
             $mail->setFrom('noreply@findsolidarity.com', 'Find Solidarity');
